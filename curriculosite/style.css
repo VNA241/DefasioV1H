@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+body {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 36px;
+    color: #2f2f2f;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #3498db;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #3498db;
+    margin-top: 20px;
+    font-size: 28px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.test1, .test2, .test3 {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.test1 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #3498db;
+    margin-top: 20px;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+li {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.test2 h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.test2 p {
+    font-size: 16px;
+    color: #555;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.project-img {
+    width: 48%;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #378eff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #1f70a7;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .test1, .test2, .test3 {
+        padding: 15px;
+    }
+
+    .project-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-img {
+        width: 80%;
+    }
+}
